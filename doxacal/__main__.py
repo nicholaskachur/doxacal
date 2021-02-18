@@ -5,6 +5,8 @@ import datetime
 import logging
 import sys
 
+from .version import __version__
+
 logging.basicConfig(format="%(message)s", level=logging.INFO)
 package_logger = logging.getLogger(__package__)
 
@@ -28,6 +30,12 @@ def main(args=None):
         default=datetime.date.today(),
         help="calendar date to search for, omit for today or use 'YYYYMMDD' formatting,"
         "e.g. '20210101'",
+    )
+    parser.add_argument(
+        "--version",
+        action="version",
+        version=f"%(prog)s {__version__}",
+        help="display version and exit",
     )
     args = parser.parse_args(args)
     package_logger.info("Happy %s!", args.date.strftime("%Y-%m-%d"))

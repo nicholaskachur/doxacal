@@ -28,7 +28,7 @@ def main(args=None):
         "--date",
         type=parse_date,
         default=datetime.date.today(),
-        help="calendar date to search for, omit for today or use 'YYYYMMDD' formatting,"
+        help="calendar date to search for, omit for today or use 'YYYYMMDD' formatting, "
         "e.g. '20210101'",
     )
     parser.add_argument(

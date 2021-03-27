@@ -1,7 +1,7 @@
-# doxacal &mdash; Orthodox Readings, Saints, and Feasts Calendar
+# doxacal &mdash; Orthodox Christian Calendar
 
 `doxacal` hopes to provide yet another interface to the daily life of
-the Orthodox Church.
+the Orthodox Christian Church.
 
 The aim is to start with a simple command-line utility that can present
 the day's readings, saints and feasts. Further work might integrate
